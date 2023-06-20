@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body-container">
+        <div class="title">
+            <h1>Welcome to Artist Mapper</h1>
+        </div>
+        <div class="description">
+            <p>This website shows the country of origin of the artists you listen to the most. For a map, link your Spotify account below!</p>
+        </div>
+        <div class="instruction-title">
+            <h1>Instructions</h1>
+        </div>   
+        <ol class="instruction-container">       
+            <li class="instruction-item1"><p>Click the "connect spotify button"</p></li>
+            <li class="instruction-item2"><p>You will be redirected to the Spotify website. Sign in to your account and click agree.</p></li>
+            <li class="instruction-item3"><p>Allow the data to load for around a minute, then enjoy!</p></li>
+        </ol>
+        <div class="sign_in_button">
+            <button>{{ sign_in_link | safe }}</button>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item1"><h2>Made by Douty Manigat</h2></div>
+            <div class="footer-item2"><h2><a href="https://www.linkedin.com/in/doutymanigat/">Linkedin</a></h2></div> 
+            <div class="footer-item3"><h2><a href="https://github.com/Douty/Artist-Mapper">Github</a></h2></div> 
+        </div> 
+    </footer>
+</body>
+</html>

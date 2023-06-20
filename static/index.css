@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+html{
+    background: black;
+    height: 100%;
+    width: min(65ch, 100% - 4rem);
+    margin-inline: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.title{
+    position: relative;
+    padding-left: 3em;
+    font-size: 2em;
+    text-align: center;
+    margin-right: 1.5em;
+}
+.description{
+    position: relative;
+    text-align: center;
+    align-self: flex-start;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-left: 1em;
+    font-size: 2em;
+    width: 90%;
+}
+.instruction-container {
+    position: relative;
+    text-align: left;
+    align-self: start;
+    margin-top: 1em;  
+    font-size: 2em;
+    width: 50ch;
+}
+.instruction-item1{
+    padding-bottom: 20px;
+}
+.instruction-item2{
+    padding-bottom: 20px;
+}
+.instruction-item3{
+    padding-bottom: 20px;
+}
+button {
+    padding: 15px 32px;
+    border-radius: 5px;
+    background-color: #191414;
+    color: #ffffff;
+    border: solid;
+    border-color:#191414 ;
+    border-radius: 2em;
+    margin-top: 1em;
+    
+    
+}
+
+a, button{
+  text-decoration: none;
+  font-size: 40px;
+}
+button:hover{
+    background-color: #1DB954;
+    border-color:#1DB954 ;
+}
+.instruction-container{
+    font-size: 2rem;
+    padding-bottom: 20px;
+
+    
+    
+}
+
+
+
+
+
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer-item1{
+    margin-top:60px;
+    margin-right: 40px;
+}
+.footer-item2{
+    margin-top:60px;
+    margin-right: 2em;
+}
+.footer-item3{
+    margin-top:60px;
+    margin-right: 40px;
+    
+}
+
+@media (max-width: 1440px) {
+    .body-container{
+        margin-left: 2em;
+        margin-top: 5em;
+    }
+    .button {
+        margin-left: 2em; 
+      }
+}
+
+@media (max-width: 768px) {
+    .body-container{
+        
+        margin-top: 5em;
+    }
+    
+    .title{
+        text-align: center;
+    }
+    
+    .description{
+        text-align: center;
+        width: auto;
+    }
+    
+    .instruction-container{
+        text-align: center;
+        width: auto;
+    }
+    
+    button{
+        padding: 10px 20px; 
+        margin-left: 1em;
+    }
+}
+
+@media (max-width: 428px) {
+    .body-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2em;
+      text-align: center;
+      margin: auto;
+    }
+  
+    .title {
+      font-size: 15px;
+      margin: auto;
+      padding-right: 3em;
+    }
+  
+    .description {
+      text-align: center;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      font-size: 1.5em;
+      margin: auto;
+       /* Adjust the width for responsiveness */
+    }
+  
+    .instruction-container {
+      margin:auto;
+      font-size: 1.5em;
+      width: auto;
+    }
+  
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2em; /* Adjust the margin for spacing */
+      margin: auto;
+    }
+    button{  
+        margin: auto;
+    }
+  }

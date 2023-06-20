@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+.table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Place the data frame on top of the map */
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Place the map behind the data frame */
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 900px) {
+    .table {
+      display: none; /* Hide the data frame on mobile devices */
+    }
+}

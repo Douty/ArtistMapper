@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='map.css') }}">
+    <title>Data Frame and Map</title>
+</head>
+<body>
+    <div class="container">
+        <div class="table">
+            {{ table_data | safe }}
+        </div>
+        <div class="map">
+            {{ map | safe }}
+        </div>
+    </div>
+</body>
+</html>
+
