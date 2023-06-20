@@ -13,14 +13,13 @@ redirect_link=getenv("SPOTIPY_REDIRECT_URI")
 
 scope="user-top-read"
 
-spotify = Spotify(auth_manager=SpotifyOAuth(scope=scope))
 
 
 
 
 #get_artist_name implants the user top artists' names into the "artist_name" list
 
-def get_artist_name(limit):
+def get_artist_name(spotify):
     ''' Adds the artist names to the the list 'artist_name'''
     user_top_artists = spotify.current_user_top_artists(limit=30, offset=0, time_range='short_term')
 

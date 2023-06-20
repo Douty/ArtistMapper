@@ -56,7 +56,7 @@ def create_app():
         user_data = DataFrame(data=user_data, columns=["Name", "Location"])
         html_user_data = user_data.to_html()
 
-        country_map = folium.Map(height="100%", width="100%", max_bounds=True, zoom_start=7, min_zoom=3, max_zoom=4,tiles='Mapbox')
+        country_map = folium.Map(height="100%", width="100%", max_bounds=True, zoom_start=7, min_zoom=3, max_zoom=4)
         HeatMap(relative_frequency, gradient={0.3: 'green', 0.6: 'yellow', 1: 'red'}, radius=50, min_opacity=0.4).add_to(
             country_map)
 
