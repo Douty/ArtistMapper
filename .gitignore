@@ -1,0 +1,9 @@
+.env
+__pycache__/
+.flask_session
+.vscode
+Lib/
+share/
+venv/
+pyvenv.cfg
+.cache
